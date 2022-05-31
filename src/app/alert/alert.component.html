@@ -1,0 +1,11 @@
+
+<div  *ngIf="state" class="container">
+
+    <div>
+        <p *ngIf="message">{{message}}</p>
+        <p *ngIf="!message">Error Occured</p>
+    </div>
+    <div>
+        <button (click)=" onClose()">Close</button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="cont" [@Trigger1]>
+    
+  
+<form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+    <div class="form-group2">
+        <h4>Student Details</h4>
+        <button (click)="onCancel()">X</button>
+    </div>
+    <hr>
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" formControlName="name"/>
+    </div>
+    <div class="form-group">
+        <label >Email</label>
+        <input type="text" formControlName="email" />
+    </div>
+    <div class="form-group">
+        <label >Phone Number</label>
+        <input type="text" formControlName="phone" />
+    </div>
+    <br>
+ <!-- <app-alert [state]="valid"[message]="message" (changeState)="onClose()" ></app-alert> -->
+    <ng-template SuccessDirective ></ng-template>
+    <ng-template SuccessDirective ></ng-template>
+    <ng-template ErrorDirective></ng-template>
+        <hr>
+    <div class="form-group1">
+        <button class="btn1" (click)="onCancel()">Cancel</button>
+        <button  type="submit" class="btn2" (click)="onSubmit()" >Submit</button>
+    </div>
+    
+    <br>
+
+</form>
+
+</div>

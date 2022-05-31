@@ -1,0 +1,13 @@
+.container{
+    position: fixed;
+    top: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    left: 20vw;
+    width: 30vw;
+    padding: 16px;
+    z-index: 100;
+    background: #fbfcfb;
+    box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
+    align-items: center;
+}
